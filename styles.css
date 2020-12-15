@@ -1,0 +1,42 @@
+html,
+body {
+  font-family: "VT323", monospace;
+  margin: 0;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+h1 {
+  color: rgb(240, 171, 68);
+  font-size: 3rem;
+}
+
+.container {
+  font-size: 3rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.social-links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+.social-links a:hover,
+.social-links a:active,
+.social-links a:focus {
+  color: rgb(231, 221, 74);
+}

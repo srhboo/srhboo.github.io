@@ -30,10 +30,32 @@ function myFirstSound() {
       E5: "e5.mp3",
     },
     release: 1,
-    baseUrl: "/tone-p5/2/samples/",
+    baseUrl: "https://srhboo.github.io/tone-p5/2/samples/",
   }).toDestination();
 
+  const distortion = new Tone.Distortion(0.9).toDestination();
+  const filter = new Tone.Filter(400, "lowpass").toDestination();
+  const feedbackDelay = new Tone.FeedbackDelay(0.2, 0.5).toDestination();
+
+  // const bigLoop = new Tone.Loop((time) => {
+  //   sampler.triggerAttackRelease("B4", "8");
+  // });
+
+  const loopA = new Tone.Loop((time) => {
+    sampler.triggerAttackRelease("C4", "8m", time);
+  }, "4n").start(0);
+
+  const loopB = new Tone.Loop((time) => {
+    sampler.triggerAttackRelease("B4", "8m", time);
+  }, 3).start(0);
+
   Tone.loaded().then(() => {
-    sampler.triggerAttackRelease(["Eb4", "G4", "Bb4"], 4);
+    Tone.Transport.start();
+    Tone.Transport.bpm.rampTo(200, 20).rampTo(80, 10, "+20");
   });
+
+  // Tone.loaded().then(() => {
+  //   // sampler.chain();
+  //   sampler.triggerAttackRelease(["C4", "E5", "A4", "B4"], 4);
+  // });
 }
