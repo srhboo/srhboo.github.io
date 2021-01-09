@@ -3,7 +3,7 @@ body {
   font-family: "Cutive Mono", monospace;
   margin: 0;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 h1 {
   color: white;
@@ -24,6 +24,7 @@ h1 {
   justify-content: center;
   background-color: rgb(28, 27, 82);
   color: white;
+  overflow-y: scroll;
 }
 
 .transportation {
