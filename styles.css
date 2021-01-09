@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "VT323", monospace;
+  font-family: "Cutive Mono", monospace;
   margin: 0;
   overflow: hidden;
 }
@@ -10,33 +10,50 @@ body {
 }
 
 h1 {
-  color: rgb(240, 171, 68);
-  font-size: 3rem;
+  color: white;
+  font-size: 2rem;
 }
 
-.container {
-  font-size: 3rem;
+.bottom {
+  margin-bottom: 5rem;
+}
+
+.bifurcation {
+  font-size: 1.5rem;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(28, 27, 82);
   color: white;
 }
 
-.social-links {
-  text-align: center;
+.transportation {
+  text-align: left;
   display: flex;
   flex-direction: column;
 }
-.social-links a {
+.transportation a {
   color: white;
   text-decoration: none;
 }
-.social-links a:hover,
-.social-links a:active,
-.social-links a:focus {
+.transportation a:hover,
+.transportation a:active,
+.transportation a:focus {
   color: rgb(231, 221, 74);
+}
+
+.fragmentation {
+  list-style: none;
+  padding: 0;
+}
+
+.creation {
+  list-style: none;
+  padding: 0;
+}
+.creation li a {
+  color: rgb(250, 183, 183);
 }
