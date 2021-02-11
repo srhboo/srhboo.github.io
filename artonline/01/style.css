@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.note-ios {
+  background-image: url('img/notes.png');
+  background-size: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 80px 20px;
+}
+.note-ios-text {
+  cursor: text;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-y: scroll;
+  white-space: pre-line;
+}
+.note-ios-text::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.note-ios-text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.note-ios-text::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;  
+}
+
+.note-1 {
+  background-image: url('img/notepad-1b.png');
+  background-size: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 70px 10px 30px 10px;
+}
+.note-1-text {
+  cursor: text;
+  box-sizing: border-box;
+  font-family: Lucida Console, monospace;
+  color: black;
+  overflow-y: scroll;
+  white-space: pre-line;
+  line-height: 1.5rem;
+}
+.note-1-text::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.note-1-text::-webkit-scrollbar-track {
+  background-color: #f0f5f5;
+}
+.note-1-text::-webkit-scrollbar-thumb {
+  background-color: #669999;
+}
+
+
+.note-2 {
+  background-image: url('img/notepad-2b.png');
+  background-size: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 65px 10px 55px 10px;
+}
+.note-2-text {
+  cursor: text;
+  box-sizing: border-box;
+  font-family: Lucida Console, monospace;
+  color: black;
+  overflow-y: scroll;
+  white-space: pre-line;
+  line-height: 1.5rem;
+}
+.note-2-text::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.note-2-text::-webkit-scrollbar-track {
+  background-color: #f0f5f5;
+}
+.note-2-text::-webkit-scrollbar-thumb {
+  background-color: #669999;
+}
+
+
+.note-3 {
+  background-image: url('img/ig-reflections.png');
+  background-size: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 65px 0 10px 430px;
+}
+.note-3-text {
+  cursor: text;
+  box-sizing: border-box;
+  font-family: Lucida Console, monospace;
+  color: black;
+  overflow-y: scroll;
+  white-space: pre-line;
+  line-height: 1.5rem;
+}
+.note-3-text::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.note-3-text::-webkit-scrollbar-track {
+  background-color: #f0f5f5;
+}
+.note-3-text::-webkit-scrollbar-thumb {
+  background-color: #669999;
+}
