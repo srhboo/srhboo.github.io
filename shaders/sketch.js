@@ -12,6 +12,7 @@ function preload() {
   // load the shader
   shapingShader = loadShader("vert/basic.vert", "frag/hsv1.frag");
   noiseShader = loadShader("vert/basic.vert", "frag/red-dots.frag");
+  imageShader = loadShader("vert/basic.vert", "frag/grids2.frag");
 }
 
 function setup() {
@@ -22,21 +23,26 @@ function setup() {
   // initialize the createGraphics layers
   shapingTexture = setupShaderTexture();
   noiseTexture = setupShaderTexture();
+  imageTexture = setupShaderTexture();
 
-  title = createElement("h1", "shader workbook");
+  title = createElement("h1", "▓▒▒▒ shader workbook ▒▒▒▓");
   title.position(100, 30).class("shader-pg-title");
 
   type1 = createA("shaping", "shaping");
   type1.position(100, 300).class("type1");
 
-  noiselabel = createA("noise", "noise/random");
-  noiselabel.position(400, 400).class("type1");
+  noiseLabel = createA("noise", "noise/random");
+  noiseLabel.position(400, 400).class("type1");
+
+  imageLabel = createA("image", "image textures");
+  imageLabel.position(700, 200).class("type1");
 }
 
 function draw() {
   // instead of just setting the active shader we are passing it to the createGraphics layer
   updateShader(shapingShader, shapingTexture);
   updateShader(noiseShader, noiseTexture);
+  updateShader(imageShader, imageTexture);
   background(255);
 
   // pass the shader as a texture
@@ -63,6 +69,16 @@ function draw() {
   rotateX(theta + 10);
   rotateY(theta + 10);
   box(90, 90, 90);
+  pop();
+
+  texture(imageTexture);
+  push();
+  translate(-width / 2, -height / 2, 0);
+  translate(820, 200);
+  rotateZ(theta + 40);
+  rotateX(theta + 40);
+  rotateY(theta + 40);
+  box(120, 120, 120);
   pop();
 }
 
