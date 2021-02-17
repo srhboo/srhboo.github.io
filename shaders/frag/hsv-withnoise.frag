@@ -89,7 +89,7 @@ void main() {
     float z = radius * 10.*sin(u_time/2.+ atan(st.y, st.x));
 
     // scale the canvas for noise
-    vec2 pos = vec2(st * 400000.);
+    vec2 pos = vec2(st);
     float n = noise(pos);
 
     // now mix it all
