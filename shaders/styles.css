@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+canvas {
+  display: block;
+}
+
+.type1,
+.type:visited,
+.type:active {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  padding: 0.2rem;
+}
+
+.shader-pg-title {
+  font-size: 2rem;
+}
+.description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  width: 400px;
+  overflow-y: scroll;
+}
+pre {
+  font-size: 1.5rem;
+  // background-color: yellow;
+}
