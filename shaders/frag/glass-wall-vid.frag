@@ -27,9 +27,6 @@ void main() {
     vec2 st = uv;
     vec2 indices;
     st = createGrid(st, vec2(100.), indices);
-
-
-    // add the distortion to our texture coordinates
     vec4 tex = texture2D(tex0, uv + st / 9.);
 
     gl_FragColor = tex;
