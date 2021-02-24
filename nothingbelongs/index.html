@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nothing belongs to me (video) - sarah boo</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../src/assets/favicon.ico"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="project-body">
+    <h1>nothing belongs to me</h1>
+    <button class="back-button" onclick="goBack()"><- back</button>
+    <section class="project-link" style="align-self: flex-start">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/8K78gB_wan8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="max-width: 100%"
+      ></iframe>
+    </section>
+    <section class="project-description" style="align-self: flex-start">
+      <p><b>[experimental videography]</b></p>
+      <p>
+        this is a video I made for my friend's song. I created various miniature
+        LED sculptures and locked myself in a dark room with a mirror and a
+        magnifying glass to shoot the footage.
+      </p>
+    </section>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

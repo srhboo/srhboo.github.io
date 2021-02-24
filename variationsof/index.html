@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>variations of open paths - sarah boo</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../src/assets/favicon.ico"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="project-body">
+    <h1>variations of open paths</h1>
+    <button class="back-button" onclick="goBack()"><- back</button>
+    <section class="project-link" style="align-self: flex-start">
+      <a href="https://variationsof.online" target="_blank"
+        >▒▒▒▒▒▒ view here ▒▒▒▒▒▒</a
+      >
+    </section>
+    <section class="project-description" style="align-self: flex-start">
+      <p><b>[generative / web / sound / interactive]</b></p>
+      <p>
+        generative artworks seem to contain a certain magic because a simple set
+        of rules can be the source of infinite expressions. I like that there is
+        a lot of play in creating generative art. it lends itself to
+        experimentation rather than top-down design.
+      </p>
+      <p>
+        it is a gift to be able to surrender to the process and allow the work
+        to lead after defining its initial boundaries. then, it's a matter of
+        finding a balance of structure (to guide the emerging of patterns), and
+        freedom (to allow randomness to give the artwork its own agency).
+      </p>
+    </section>
+    <img src="../src/assets/variationsof_1.png" class="top-pic" />
+    <section class="project-description double">
+      <p>
+        digital spaces have largely become flattened and homogenized and
+        possessed by corporate spirits. under the towering dopamine-driven
+        interfaces of Big Social Media and between loveless cookie-cutter
+        business structures, our cyborg hearts attempt to gather but are lost.
+        Sol Lewitt's <i>Variations of Incomplete Open Cubes</i> is an early
+        generative work that frees the form of a cube by exposing and hiding
+        different combinations of its edges.
+      </p>
+      <p>
+        how did we get here? if we reexamine the paths we took, disconnect their
+        joints and rearrange them in space and time, can we imagine new
+        structures? how might we free the web of its current shape, disentangle
+        it from the structures of capitalism, and rearrange its parts to allow
+        the imaginations of new forms to emerge?
+      </p>
+    </section>
+    <img src="../src/assets/variationsof_4.png" class="bottom-pic" />
+    <section
+      class="project-description small-list"
+      style="align-self: flex-end; position: relative"
+    >
+      <p>The rules:</p>
+      <ul>
+        <li>
+          ▒ 1 - 100 randomly consecutively generated points are created. A point
+          must be 1 unit away from the previous point along x, y, or z axis in
+          positive or negative direction.
+        </li>
+        <li>
+          ▒ 2 - Lines are drawn at points in the path where the path reverses
+          back onto itself (ex. point A to point B, back to point A). The path
+          reversal lines hint at where the path will lead, but cannot reveal it
+          exactly as there are many path possibilities that can cause each line.
+        </li>
+        <li>
+          ▒ 3 - Planes are created at the points where there are two lines drawn
+          consecutively in the same direction. These are places where there has
+          been a lot of back and forth movement coinciding with each other: a
+          high density of deliberation over which direction the path will take.
+        </li>
+        <li>
+          ▒ 4 – Tunnels are drawn connecting these planes, marking a journey
+          through the path’s moments of deliberation and reexamination.
+        </li>
+      </ul>
+    </section>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

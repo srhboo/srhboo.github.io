@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>conduction // body - sarah boo</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="../src/assets/favicon.ico"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="project-body">
+    <h1>conduction // body</h1>
+    <button class="back-button" onclick="goBack()"><- back</button>
+    <section class="project-link" style="align-self: flex-start">
+      <iframe
+        src="https://player.vimeo.com/video/490138293"
+        width="640"
+        height="360"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="max-width: 100%"
+      ></iframe>
+    </section>
+    <section class="project-description" style="align-self: flex-start">
+      <p><b>[sound / performance / max 8 / audiovisual]</b></p>
+      <p>
+        these wearable pieces act as switches, passing signals to four different
+        Arduino pins in order to trigger programmed events during a live
+        performance. the signals can be sent by holding either of the hand
+        pieces to any of the other pieces (one of the knee pieces has 2 possible
+        connections, the rest have 1). the Arduino module then sends the
+        readings to Max 8 to trigger changes in sound.
+      </p>
+    </section>
+    <img
+      src="../src/assets/glove1.jpg"
+      class="top-pic"
+      style="width: 40%; top: 15%"
+    />
+    <section class="project-description double">
+      <p>
+        The placement and features of the wearable parts puts the performer in a
+        defamiliarized state in relation to their body, and encourages
+        exploration of their new appendages as well as examination of their old
+        movements. For this programmed piece, synchronized connections of body
+        parts trigger the transition between entirely different sonic
+        environments, bringing focus to these moments of unity, and the
+        positioning of the body in these transitional states.
+      </p>
+    </section>
+    <img
+      src="../src/assets/knees.jpg"
+      style="width: 40%; align-self: flex-start"
+    />
+    <section class="project-description small-list">
+      <p>Materials:</p>
+      <ul>
+        <li>▒ Conductive thread</li>
+        <li>▒ Screws</li>
+        <li>▒ Metal wire</li>
+        <li>▒ Non-conductive thread</li>
+        <li>▒ Hookup wire</li>
+        <li>▒ PCB or breadboard</li>
+        <li>▒ Resistors (4 x 4.7K ohm, 4 x 220 ohm)</li>
+        <li>▒ Coin cell battery + holder</li>
+        <li>▒ Non-conductive fabric to form the parts (nylons, yarn)</li>
+      </ul>
+    </section>
+    <section class="project-description">
+      <p><b>Tools and Techniques</b></p>
+      <p>
+        Each part was constructed by attaching conductive materials (wire,
+        screws) to non-conductive fabric using non-conductive thread, and then
+        connecting them to a lead wire and a paired current-limiting 220 ohm
+        resistor using conductive thread. I found the easiest method to secure
+        the parts onto the fabric was by bending hooks onto the ends of metal
+        pieces where possible, to create anchors for sewing.
+      </p>
+      <p>
+        After testing, I found that I would get tiny shocks from having my bare
+        skin exposed to the metal pieces, so I added a layer of tape (yes, this
+        was after looking up if you could accidentally defibrillate your heart
+        with a 3.3 V battery. You can't). I also added some resistors to some of
+        the longer circuit sections between the conductive screws, so that
+        depending on the point at which the circuit made contact, a different
+        effective resistance would vary the current and reading sent to the
+        Arduino- in the future, these could be used as analog sensors instead of
+        on/off switches.
+      </p>
+      <p>
+        The "receiving" parts (knees, face) were then attached to a PCB using
+        their lead wire, where they were soldered to pull-down resistors and
+        connected to their respective Arduino analog input pins. The "sending"
+        parts (hands) were attached to the positive terminal of the battery
+        using their lead wire. I could have just used an Arduino pin to send a
+        signal out instead of using a battery, but I was convinced earlier on
+        that I could have a wireless glove set up by using the battery (it
+        didn't work, of course).
+      </p>
+    </section>
+    <section class="project-description">
+      <p><b>Source and Files</b></p>
+      <img src="../src/assets/circuitbody.png" style="width: 100%" /><br />
+      <img src="../src/assets/bodymax.png" style="width: 100%" />
+      <a href="https://pastebin.com/A9fqQuEN" target="_blank">Arduino code</a>
+      <a href="https://pastebin.com/RkDYS5Qj" target="_blank">Max file</a>
+    </section>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
