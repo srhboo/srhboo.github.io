@@ -37,10 +37,7 @@ function init() {
 
   renderer = new THREE.WebGLRenderer();
   renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(
-    Math.max(2200, window.innerWidth),
-    Math.max(1500, window.innerHeight)
-  );
+  renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
 
   onWindowResize();
@@ -53,7 +50,7 @@ function init() {
 }
 
 function onWindowResize(event) {
-  //   renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   uniforms.u_resolution.value.x = renderer.domElement.width;
   uniforms.u_resolution.value.y = renderer.domElement.height;
 }
@@ -64,6 +61,6 @@ function animate() {
 }
 
 function render() {
-  uniforms.u_time.value += 0.05;
+  uniforms.u_time.value += 0.01;
   renderer.render(scene, camera);
 }
