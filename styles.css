@@ -105,6 +105,10 @@ body::-webkit-scrollbar-thumb {
   background-image: url("src/assets/jelly.jpg");
   background-size: 100%;
 }
+#shadermusic {
+  background-image: url("src/assets/prev/shadermusic-prev.png");
+  background-size: 100%;
+}
 
 .social {
   position: absolute;
