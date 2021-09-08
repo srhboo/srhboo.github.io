@@ -28,8 +28,8 @@ function setup() {
   title = createElement("h1", "▓▒▒▒ shader workbook ▒▒▒▓");
   title.position(100, 30).class("shader-pg-title");
 
-  type1 = createA("shaping", "shaping");
-  type1.position(100, 300).class("type1");
+  // type1 = createA("shaping", "shaping");
+  // type1.position(100, 300).class("type1");
 
   noiseLabel = createA("noise", "noise/random");
   noiseLabel.position(400, 400).class("type1");

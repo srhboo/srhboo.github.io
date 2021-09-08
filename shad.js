@@ -1,5 +1,3 @@
-import * as THREE from "three";
-
 var container;
 var camera, scene, renderer;
 var uniforms;
